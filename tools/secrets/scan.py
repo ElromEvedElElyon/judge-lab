@@ -70,6 +70,11 @@ SKIP_PATH_SUBSTRINGS = (
     "/detector/", "\\detector\\",
     "/safety/", "\\safety\\",
     "/eval_mythos/", "\\eval_mythos\\",
+    # Code review / agentic coding modules ship credential-pattern regexes:
+    "/agentic_coding/", "\\agentic_coding\\",
+    "code_reviewer", "rules.py",
+    # PII scanner / secret leak modules
+    "pii_scanner", "secret_leak",
     "scan_secrets.py",  # this file itself
 )
 
